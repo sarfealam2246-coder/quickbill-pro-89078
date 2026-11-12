@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512'>
+  <defs>
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#4CAF50;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#8BC34A;stop-opacity:1' />
+    </linearGradient>
+    <linearGradient id='grad2' x1='0%' y1='100%' x2='100%' y2='0%'>
+      <stop offset='0%' style='stop-color:#FFC107;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#FF9800;stop-opacity:1' />
+    </linearGradient>
+  </defs>
+  <rect width='512' height='512' rx='50' ry='50' fill='url(#grad1)' />
+  <path d='M256 128C192.5 128 128 192.5 128 256s64.5 128 128 128 128-64.5 128-128S319.5 128 256 128zm0 224c-52.9 0-96-43.1-96-96s43.1-96 96-96 96 43.1 96 96-43.1 96-96 96z' fill='white' />
+  <path d='M256 192c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64z' fill='url(#grad2)' />
+  <path d='M368 144h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM368 256h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM368 368h-16c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8z' fill='white' />
+</svg>
