@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <title>QuickBill Pro</title>
+</head>
+<body>
+    <div id="splash-screen">
+        <img src="logo.png" alt="QuickBill Pro Logo" id="logo">
+        <p id="version">Version 1.0</p>
+    </div>
+    
+    <div id="app" class="hidden">
+        <div id="drawer-backdrop" class="drawer-backdrop"></div>
+        <div id="profile-drawer" class="drawer">
+            <h2>Profile</h2>
+            <p id="profile-name"></p>
+            <p id="profile-mobile"></p>
+            <p id="shop-type"></p>
+            <p id="total-bills"></p>
+            <p id="total-sales"></p>
+            <button id="logout-btn">Logout</button>
+        </div>
+        
+        <div id="top-bar">
+            <button id="menu-btn" onclick="toggleProfileDrawer()">
+                <i data-lucide="menu"></i>
+            </button>
+            <div id="live-status">
+                <p id="live-sales">Today's Sales: Rs. 0</p>
+                <p id="pending-udhar">Pending Udhar: Rs. 0</p>
+                <p id="total-bills-display">Total Bills: 0</p>
+            </div>
+        </div>
+
+        <nav id="bottom-nav">
+            <button id="tab-home">
+                <i data-lucide="home"></i>
+            </button>
+            <button id="tab-billing">
+                <i data-lucide="file-text"></i>
+            </button>
+            <button id="tab-khata">
+                <i data-lucide="book"></i>
+            </button>
+            <button id="tab-profile">
+                <i data-lucide="user"></i>
+            </button>
+        </nav>
+
+        <main id="content"></main>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
